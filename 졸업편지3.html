@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2022년을 보내며</title>
+
+  <!-- favicon 설정 -->
+  <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/574560.png">
+
+
+  <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/11/04/06/22/merry-christmas-5711547_960_720.jpg">
+  <meta property="og:title" content="민석이가 보내는 카드">
+  <meta property="og:description" content="2022년을 추억하며">  
+
+
+  <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+   <style>
+      * {
+         font-family: 'Poor Story', cursive;
+      }
+
+      body {
+      
+         background-color: #9b070f;
+      }
+
+      .envelope {
+        width: 200px;
+        height: 200px;
+        
+        background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+        background-size: cover;
+        background-position: center;
+
+        margin: 200px auto 0px auto;
+        cursor:pointer;
+      }
+
+      .envelope-msg {
+         color: white;
+         text-align: center;
+      }
+
+      .letter-close {
+         display: block;
+      }
+
+      .letter-open {
+         display: none;
+      }
+
+      .rtan {
+         background-color: white;
+         width: 200px;
+         height: 200px;
+
+         background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker.gif');
+         background-size: 90%;
+         background-position: center top;
+     
+         margin: 100px auto 0px auto;
+
+         border-radius: 100px;
+         border: 5px solid white;
+         box-shadow: 0px 0px 10px 0px white;
+      }
+
+      h1 {
+         color: white;
+         text-align: center;
+         margin-top: 30px;
+         margin-bottom: 30px;
+      }
+
+      .messageBox {
+         background-color: ivory;
+         width: 400px;
+   
+
+         margin: auto;
+         color: brown;
+
+         padding: 30px;
+         font-size: 20px;
+         line-height: 30px;
+
+         border-radius: 5px;
+         border: 1px solid white;
+         box-shadow: 0px 0px 10px 0px white;
+      }
+
+      .from {
+         text-align: right;
+         margin-bottom: 0px;
+      }
+
+      @media screen and (max-width: 760px) {
+         .messageBox {
+            width: 300px;
+            padding: 20px;
+                                font-size: 17.5px
+         }
+
+         .rtan {
+            width: 150px;
+            height: 150px;
+            margin: 70px auto 0px auto;
+         }
+
+         h1 {
+            font-size: 28px;
+         }
+
+         .envelope {
+            margin: 150px auto 0px auto;
+         }
+      }
+   </style>
+
+   <script>
+      function open_letter() {
+      document.getElementsByClassName("letter-close")[0].style.display = 'none'
+      document.getElementsByClassName("letter-open")[0].style.display = 'block'
+    }
+
+
+   </script>
+</head>
+
+<body>
+   <div class="letter-close">
+      <div class="envelope" onclick="open_letter()"></div>
+      <h2 class="envelope-msg">봉투를 열어봐!</h2>
+   </div>
+
+   <div class="letter-open">
+
+      <h1>2022년 졸업 축하해!</h1>
+      <div class="messageBox">
+         to.유나 🙋‍♂<br />
+         <br />
+               이 잼민아, 철 좀 들어. 사실 장난이고 졸업 축하해! <br />
+         <br />
+               1년동안 부족한 내 친구가 되어줘서 너무 고마워! 정말 널 잊지 못할 거 같아. <br />
+         <br />
+               근데 이렇게 말한다고 영영 떠나는 거 아니니까 연락 끊지마. 내가 내 학교 생활 인스타로 많이 올려줄게 꼭 구경해! ㅋㅋㅋ <br />
+         <br />
+               너도 어떤 고등학교를 갈지는 모르겠지만 거기서 나 같은 좋은 친구들 많이 사겨! <br />
+         <br />
+               너 덕분에 올해 좋은 추억 엄청 많이 남겼어. 너무 고맙고 또 가끔은 못 살게 군거 미안해.. <br />
+         <br />
+               그럼 담에 다시 만날 그 날을 고대하며 여기서 마무리할게.^^<br />
+         <br />
+      <p class="from"> 2022.12.30. 널 최고의 친구라고 생각하는 민석이가 </p>
+    </div>
+  </div>
+</body>
+
+</html>
